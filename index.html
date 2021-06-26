@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Calc | TanShadow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="asker">
+        <h1>When is your next birthday?.. </h1>
+        <p class="format">Format : Day Month Year. Note: Month should be 3 letter shortform with first letter capitalised</p>
+            <div class="inpdiv">
+                <input class="userInput" type="text" value="1 Jan 2022" />
+                <a onclick="getInp()">Find out?</a>
+            </div>
+
+            <p class="bug">Bug report: If you type another input and press the button some weird stuff will happen, I will try to fix it</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="msg1">You have</div>
+
+        <div class="clockHolder">
+            
+            <div class="col">
+                <div class="days">00</div>
+                <div class="text">day</div>
+            </div>
+
+            <div class="col">
+                <div class="hours">00</div>
+                <div class="text">hrs</div>
+            </div>
+
+            <div class="col">
+                <div class="minutes">00</div>
+                <div class="text">min</div>
+            </div>
+
+            <div>
+                <div class="seconds">00</div>
+                <div class="text">secs</div>
+            </div>
+        </div>
+
+        <div class="msg2">left for your birthday</div>
+
+    </div>
+
+    <script src="./scrpt.js"></script>
+</body>
+</html>
