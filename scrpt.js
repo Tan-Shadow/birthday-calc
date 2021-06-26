@@ -4,13 +4,12 @@ const minEle = document.querySelector('.minutes')
 const secEle = document.querySelector('.seconds')
 
 
+var userInput = document.querySelector('.userInput').value
+const userDate = new Date(userInput)
 
 // runs when user presses btn
 function getInp(){
     
-    var userInput = document.querySelector('.userInput').value
-    const userDate = new Date(userInput)
-    // console.log(userDate)
 
     if (userInput != null){
 
@@ -30,7 +29,6 @@ function getInp(){
             minEle.innerHTML =  minutes
             secEle.innerHTML =  seconds
             
-            console.log(days, hours, minutes, seconds)
     
         }
         setInterval(timeCalc, 1000)
